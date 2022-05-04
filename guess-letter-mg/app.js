@@ -17,7 +17,7 @@ let questionIndex = 0
 let answerIndex = 0
 let trueOption;
 
-function askHim() {
+function askHim() { //TODO
      //* 1 artıyo
     // answerIndex++; //* 1 artıyo
     
