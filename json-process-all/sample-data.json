@@ -1,0 +1,98 @@
+{
+    "products":
+    [
+        {
+        "ProductName":"kingston klavye",
+        "ProductCategory":"Teknoloji",
+        "ProductPrice":"50$",
+        "ProductAmount":50
+        },
+        {
+            "ProductName":"toshiba klavye",
+            "ProductCategory":"Teknoloji",
+            "ProductPrice":"20$",
+            "ProductAmount":10
+        },
+        {
+            "ProductName":"steelSeries klavye",
+            "ProductCategory":"Teknoloji",
+            "ProductPrice":"110$",
+            "ProductAmount":24
+        },
+        {
+            "ProductName":"kingston 8GB Usb Bellek",
+            "ProductCategory":"Teknoloji",
+            "ProductPrice":"10$",
+            "ProductAmount":100
+        },
+        {
+            "ProductName":"Hyperx 8gb 3200mhz cl 16 RAM ddr4",
+            "ProductCategory":"Teknoloji",
+            "ProductPrice":"30$",
+            "ProductAmount":40
+        },
+        {
+            "ProductName":"BORON DETERJAN",
+            "ProductCategory":"Temizlik",
+            "ProductPrice":"5$",
+            "ProductAmount":250
+        },
+        {
+            "ProductName":"OK Prezervatif",
+            "ProductCategory":"Üretkenlik",
+            "ProductPrice":"8.50$",
+            "ProductAmount":110
+        },
+        {
+            "ProductName":"Baston Ekmek",
+            "ProductCategory":"Gıda",
+            "ProductPrice":"1$",
+            "ProductAmount":43
+        },
+        {
+            "ProductName":"Tornavida set",
+            "ProductCategory":"Ev Eşyası",
+            "ProductPrice":"20$",
+            "ProductAmount":90
+        }
+    ],
+    "customers":
+    [
+        {
+            "customerName":"Berkay Saraç",
+            "customerId":1,
+            "customerFavCategory":"Technology",
+            "customerPhoneNumber":"5413131"
+        },
+        {
+            "customerName":"ali oztoprak",
+            "customerId":2,
+            "customerFavCategory":"Giyim",
+            "customerPhoneNumber":"5421212"
+        },
+        {
+            "customerName":"Enes demir",
+            "customerId":3,
+            "customerFavCategory":"Ev eşyası",
+            "customerPhoneNumber":"5432121"
+        },
+        {
+            "customerName":"Miraç içöz",
+            "customerId":4,
+            "customerFavCategory":"Giyim",
+            "customerPhoneNumber":"5443121"
+        },
+        {
+            "customerName":"Burak Doğan",
+            "customerId":5,
+            "customerFavCategory":"Gıda",
+            "customerPhoneNumber":"545541"
+        },
+        {
+            "customerName":"Yunus cayaroğlu",
+            "customerId":6,
+            "customerFavCategory":"Technology",
+            "customerPhoneNumber":"5464121"
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+<style>
+    body{
+        background-color: bisque;
+        text-align: center;
+    }
+    #message-box{
+        text-align: center;
+
+    }
+</style>
+<body>
+<div id="message-box">
+    <h3 class="card-header text-primary">pass the message</h3>
+    <input class="border-primary shadow-lg btn-outline-info" type="text" name="" id="write-message">
+    <button class="btn btn-lg btn-light btn-outline-info" id="btn-ok">OKAY</button>
+    <div id="your-message"></div>
+</div>
+<script>
+    let messageInput = document.getElementById("write-message");
+    let okBtn = document.getElementById("btn-ok");
+    let output = document.getElementById("your-message");
+    okBtn.addEventListener("click",()=>{
+        if (messageInput.value === "") {
+            alert("MESSAGE İS EMPTY")
+        }
+        else{
+        output.innerHTML = "your message is :" + messageInput.value;
+        alert("your message is :" + messageInput.value)
+        }
+    })
+</script>
+</body>
+</html>

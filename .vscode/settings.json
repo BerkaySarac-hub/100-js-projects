@@ -1,0 +1,15 @@
+{
+    "workbench.colorCustomizations": {
+        "sash.hoverBorder": "#fbed80"
+    },
+    "peacock.color": "#f9e64f",
+    "superBG.disable": false,
+    "superBG.images": [
+        "/C:/Users/berka/Pictures/Saved Pictures/CEafsh.jpg"
+    ],
+    "superBG.activeImage": 0,
+    "superBG.url": "",
+    "superBG.opacity": 22,
+    "superBG.scale": 99,
+    "liveServer.settings.port": 5501
+}

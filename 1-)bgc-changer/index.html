@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <style>
+      body{
+          text-align: center;
+      }
+  </style>
+</head>
+<body style="background-color: white;">
+<h1>BACK GROUND CHANGİNG</h1>
+<button id="next" class="btn btn-light btn-outline-info">Change next color</button>
+<button id="previus" class="btn btn-info btn-outline-danger">Change previus color</button>
+<button id="auto" class="btn btn-dark btn-outline-primary">CHANGE AUTOMATİCALLY</button>
+
+<script>
+    let govde = document.querySelector("body");
+    let nextBtn = document.getElementById("next")
+    let prevBtn = document.getElementById("previus")
+    let autoBtn = document.getElementById("auto")
+    let colors = {
+      color:["red","blue","orange","turqoise","black","yellow","blue","green","lightgreen","brown","cyan","darkorange","darkblue","limegreen","fuchsia","lime","teal","blueviolet","gold","indigo","mediumorchid","mediumvioletred","tomato"]
+    }
+    let index = 0;
+    nextBtn.addEventListener("click",()=>{
+      index++;
+      if (index > colors.color.length) {
+        index = 0
+      }
+      govde.style.backgroundColor=(colors.color[index])
+      
+    });
+    prevBtn.addEventListener("click",()=>{
+       // index 13 oldu
+      index--; //butona her tıklandığında 1 azalt 12 11 10....
+      if (index <= 0) { //eğer index 0 a eşit veya küçükse
+        index = (colors.color.length -1) //indexin değerini tekrar 13 yap
+      }
+      govde.style.backgroundColor = (colors.color[index]) //body nin arkaplan rengini değiştir
+
+      console.log(index)
+    })
+    autoBtn.addEventListener("click",()=>{
+      setInterval(() => {
+        index++;
+      if (index > colors.color.length) {
+        index = 0
+      }
+      govde.style.backgroundColor=(colors.color[index])
+      }, 200);
+    });
+</script>
+</body>
+</html>
